@@ -90,3 +90,9 @@ footer { border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: 
 
 @media(max-width:768px) { .nav-links { display: none; } .video-grid, .tiktok-grid, .gallery-grid { grid-template-columns: 1fr 1fr; } }
 @media(max-width:480px) { .video-grid, .tiktok-grid, .gallery-grid { grid-template-columns: 1fr; } }
+
+/* Archive notice */
+body { padding-bottom: 64px; }
+.archive-note { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1001; background: rgba(10,10,15,0.97); border-top: 1px solid var(--gold); color: var(--text); font-size: .85rem; line-height: 1.5; text-align: center; padding: .7rem 1rem calc(.7rem + env(safe-area-inset-bottom, 0px)); }
+.archive-note b { font-family: 'Cinzel', serif; color: var(--gold); letter-spacing: .14em; text-transform: uppercase; font-size: .7rem; margin-right: .5rem; }
+.archive-note a { color: var(--gold); white-space: nowrap; }
